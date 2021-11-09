@@ -1,11 +1,11 @@
-const SERVER_HOST = "http://localhost:3000/"; // change to real server
+const SERVER_HOST = "http://localhost:3000/";
 
 window.addEventListener('load', function() {
     const btn = document.getElementById("date-btn");
 
     btn.addEventListener('click', function() {
         //console.log(document.getElementById("date-input").value);
-        queries = '?date='+ document.getElementById("date-input").value
+        let queries = '?date=' + document.getElementById("date-input").value
         console.log(SERVER_HOST+queries);
 
         xhr = new XMLHttpRequest();
